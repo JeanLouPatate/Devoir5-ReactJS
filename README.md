@@ -3,6 +3,7 @@
 ## Technologies utilisées:
 -HTML
 -CSS
+-Javascript
 -Bootstrap
 -React
 
