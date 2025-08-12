@@ -1,6 +1,26 @@
-h1 {
-    color: white;
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* centre verticalement */
+    align-items: center;
+    /* centre horizontalement */
+    color: rgb(255, 255, 255);
 }
+
+.btn_home {
+    background-color: red;
+    /* fond rouge */
+    color: white;
+    /* texte blanc */
+    padding: 5px 12px;
+    /* un peu d’espace autour du texte */
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
 body {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
@@ -16,6 +36,10 @@ h6,
 strong {
     font-weight: 600;
     /* titres et balises <strong> */
+}
+
+h2 {
+    padding-bottom: 5px;
 }
 
 .line {
@@ -63,4 +87,63 @@ strong {
     background-color: #fff;
     /* fond blanc pour mieux voir l’ombre */
     margin-bottom: 20px;
+}
+
+header {
+    background-color: #00070f;
+    height: 50px;
+}
+
+.navbar * {
+    color: white !important;
+    font-size: 0.9rem;
+    /* taille plus petite */
+}
+
+.nav .nav-link:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    /* centre verticalement */
+    align-items: center;
+    /* centre horizontalement */
+    background-color: #00070f;
+    color: white;
+}
+
+.foot2 {
+    padding-left: 300px;
+    padding-right: 300px;
+    line-height: 7px;
+}
+
+.foot3 {
+    line-height: 7px;
+    margin-top: 15px;
+}
+
+.h_footer {
+    margin-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    /* enlève le soulignement */
+}
+
+.social-icon {
+    color: rgba(50, 50, 50, 0.6);
+    /* gris foncé un peu transparent */
+    margin-right: 10px;
+    transition: color 0.3s;
+    display: inline-block;
+}
+
+.social-icon:hover {
+    color: rgba(50, 50, 50, 1);
+    /* couleur pleine au survol */
 }
