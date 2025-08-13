@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John DOE</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="../assets/service.css">
     <!-- Nunito Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
     <!-- Instalation Bootsrap -->
@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-black-transparent">
             <div class="container-fluid">
@@ -28,7 +27,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto"> <!-- ms-auto pour aligner à droite -->
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/service.html">SERVICES</a>
@@ -48,70 +47,43 @@
         </nav>
     </header>
 
+    <img class="img_home" src="../assets/img/banner.jpg" alt="image de fond john doe - un faisseau de lumière">
 
-    <!-- Image et titre de début -->
-    <div class="container text-center py-5 home">
-        <h1 class="display-4">Bonjour, je suis John DOE</h1>
-        <h2 class="lead mb-4">Développeur web full stack</h2>
-        <button class="btn_home">En savoir plus</button>
-    </div>
-    <section class="container my-5">
-        <div class="bg-white rounded shadow p-4">
-            <div class="row">
-                <!-- A propos -->
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <h3 class="border-bottom pb-2">A propos</h3>
-                    <img src="./assets/img/john-doe-about.jpg" alt="Photo de John Doe" class="img-fluid mb-3" />
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magnam
-                        sunt animi fuga dolore ad tempora in magni eum repellendus. Quae totam
-                        ea earum facere architecto, atque eos in
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magnam
-                        sunt animi fuga dolore ad tempora in magni eum repellendus. Quae totam
-                        ea earum facere architecto, atque eos in
-                    </p>
-                </div>
+<section class="offre1">
+    <h1>Mon offre de service</h1>
+    <p>Voici les prestations sur lesquelles je peux intervenir</p>
+    <div class="bar"></div>
+</section>
 
-                <!-- Mes compétences -->
-                <div class="col-md-6">
-                    <h3 class="border-bottom pb-2">Mes compétences</h3>
-
-                    <label>HTML5 90%</label>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 90%;"></div>
-                    </div>
-
-                    <label>CSS 80%</label>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%;"></div>
-                    </div>
-
-                    <label>JAVASCRIPT 70%</label>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 70%;"></div>
-                    </div>
-
-                    <label>PHP 60%</label>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 60%;"></div>
-                    </div>
-
-                    <label>REACT 50%</label>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;"></div>
-                    </div>
-                </div>
-            </div>
+<section class="carre container">
+    <div class="row">
+        <div class="ux col-12 col-md-4">
+            <img src="../assets/img/pinceau.png" alt="dessin de pinceau ux design" class="mb-3" style="width:60px;">
+            <p><strong>UX Design</strong><br>
+                Aussi appelée design d’expérience, l’UX design est une démarche visant à créer une expérience
+                utilisateur optimale. Cette approche s’appuie une vision holistique de l'expérience utilisateur
+                englobant des sujets tels que l’ergonomie, la psychologie, ou encore la science cognitive.
+            </p>
         </div>
-    </section>
+        <div class="dev col-12 col-md-4">
+             <img src="../assets/img/avance-rapide.png" alt="dessin de flèches dev web" class="mb-3" style="width:60px;">
+            <p><strong>Développement web</strong><br>
+                Un développeur web est un informaticien spécialisé dans la programmation ou expressément impliqué dans le
+                développement des applications du web, ou des applications qui sont exécutées à partir d'un serveur web sur
+                un navigateur web et qui utilisent le protocole HTTP comme vecteur de transmission de l'information.
+            </p>
+        </div>
+        <div class="seo col-12 col-md-4">
+             <img src="../assets/img/loupe.png" alt="dessin de loupe référencement" class="mb-3" style="width:60px;">
+            <p><strong>Référencement</strong><br>
+                Le SEO (Search Engine Optimization), ou optimisation pour les moteurs de recherche, désigne l'ensemble des techniques mises en œuvre pour améliorer la position d'un site web dans les résultats des moteurs de recherche.
+            </p>
+        </div>
+    </div>
+</section>
 
 
-    <!-- Instalation Bootsrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
+
 
     <footer>
         <div class="container">
@@ -175,7 +147,10 @@
     </footer>
 
 
-
+    <!-- Instalation Bootsrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

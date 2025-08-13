@@ -83,12 +83,12 @@ h2 {
     padding: 20px;
     /* un peu d’espace à l’intérieur */
     border-radius: 10px;
-    /* coins arrondis si tu veux */
+    /* coins arrondis */
     background-color: #fff;
     /* fond blanc pour mieux voir l’ombre */
     margin-bottom: 20px;
 }
-
+.row
 header {
     background-color: #00070f;
     height: 50px;
@@ -98,6 +98,9 @@ header {
     color: white !important;
     font-size: 0.9rem;
     /* taille plus petite */
+}
+.navbar{
+    background-color: #00070f;
 }
 
 .nav .nav-link:hover {
