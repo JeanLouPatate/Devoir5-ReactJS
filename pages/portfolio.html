@@ -5,42 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John DOE</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="../assets/portfolio.css">
     <!-- Nunito Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
     <!-- Instalation Bootsrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="./assets/img/anonym.png">
+    <link rel="icon" type="image/png" href="../assets/img/anonym.png">
 </head>
 
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-black-transparent">
             <div class="container-fluid">
-                <span class="navbar-brand"><link rel="stylesheet" href="./index.html">JOHN DOE</span>
+                <span class="navbar-brand">
+                    <link rel="stylesheet" href="./index.html">JOHN DOE
+                </span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto"> <!-- ms-auto pour aligner à droite -->
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html" class="active">HOME</a>
+                            <a class="nav-link" aria-current="page" href="../index.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/service.html">SERVICES</a>
+                            <a class="nav-link" href="./service.html">SERVICES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/portfolio.html">PORTFOLIO</a>
+                            <a class="nav-link active" href="portfolio.html">PORTFOLIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/contact.html">CONTACT</a>
+                            <a class="nav-link" href="./contact.html">CONTACT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/mentionslegales.html">MENTIONS LEGALES</a>
+                            <a class="nav-link" href="./mentionslegales.html">MENTIONS LEGALES</a>
                         </li>
                     </ul>
                 </div>
@@ -48,97 +49,100 @@
         </nav>
     </header>
 
-    <!-- Image et titre de début -->
-    <div class="text-center py-5 home">
-        <p class="hh1">Bonjour, je suis John DOE</p>
-        <p class="hh2">Développeur web full stack</p>
-        <!-- Bouton qui déclenche la modale -->
-        <button class="btn_home" data-bs-toggle="modal" data-bs-target="#infoModal">
-            En savoir plus
-        </button>
-    </div>
+    <section class="offre1 text-center my-5">
+        <h1>Portfolio</h1>
+        <p>Voici quelques unes de mes réalisations</p>
+        <div class="bar mx-auto"></div>
+    </section>
 
-    <!-- Modale Bootstrap -->
-    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="infoModalLabel">À propos de John DOE</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="text-center mb-3">
-                        <img src="https://avatars.githubusercontent.com/u/19842736?v=4" alt="Avatar John Doe" class="img-fluid rounded-circle" style="width:100px;">
+    <div class="container">
+        <!-- Première ligne -->
+        <section class="sic">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="../assets/img/fresh-food.jpg" class="card-img-top"
+                            alt="Projet fresh food, panier de légumes">
+                        <div class="card-body">
+                            <h5 class="card-title">Fresh Food</h5>
+                            <p class="card-text">Site de vente de produits frais en ligne</p>
+                            <a href="#" class="btn btn-primary">Voir le site</a>
+                        </div>
+                        <div class="card-footer">Site réalisé avec PHP et MySQL</div>
                     </div>
-                    <p><strong>Nom :</strong> John Doe</p>
-                    <p><strong>Bio :</strong> As we all know, John Doe's identity is unknown. I just wanted to contribute without being known.</p>
-                    <p><strong>Repos publics :</strong> 1 | <strong>Followers :</strong> 16 | <strong>Following :</strong> 0</p>
-                    <p><strong>Date de création :</strong> 09/06/2016</p>
-                    <a href="https://github.com/github-john-doe" target="_blank" class="btn btn-dark w-100">Voir sur GitHub</a>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="../assets/img/restaurant-japonais.jpg" class="card-img-top" alt="Des sushis et makis">
+                        <div class="card-body">
+                            <h5 class="card-title">Restaurant Akira</h5>
+                            <p class="card-text">Site de vente de produits frais en ligne</p>
+                            <a href="#" class="btn btn-primary">Voir le site</a>
+                        </div>
+                        <div class="card-footer">Site réalisé avec Wordpress</div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="../assets/img/espace-bien-etre.jpg" class="card-img-top"
+                            alt="Budha avec un lotus sous un coucher de soleil">
+                        <div class="card-body">
+                            <h5 class="card-title">Espace bien-être</h5>
+                            <p class="card-text">Site de vente de produits frais en ligne</p>
+                            <a href="#" class="btn btn-primary">Voir le site</a>
+                        </div>
+                        <div class="card-footer">Site réalisé avec LARAVEL</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    <!-- Deuxième ligne -->
+    <section class="sec">
+        <div class="row g-4 mt-3">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="../assets/img/seo.jpg" class="card-img-top" alt="SEO et mots clefs à ce sujet">
+                    <div class="card-body">
+                        <h5 class="card-title">SEO</h5>
+                        <p class="card-text">Amélioration du référencement d'un site e-commerce</p>
+                        <a href="#" class="btn btn-primary">Voir le site</a>
+                    </div>
+                    <div class="card-footer">Utilisation des outils SEO</div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="../assets/img/coder.jpg" class="card-img-top" alt="Lignes de code sur écran PC">
+                    <div class="card-body">
+                        <h5 class="card-title">Création d'une API</h5>
+                        <p class="card-text">Création d'une API RESTFULL publique</p>
+                        <a href="#" class="btn btn-primary">Voir le site</a>
+                    </div>
+                    <div class="card-footer">PHP - SYMFONY</div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="../assets/img/screens.jpg" class="card-img-top"
+                        alt="Ordinateur portable, pc et tablette sur une table">
+                    <div class="card-body">
+                        <h5 class="card-title">Maquette d'un site web</h5>
+                        <p class="card-text">Création du prototype d'un site e-commerce</p>
+                        <a href="#" class="btn btn-primary">Voir le site</a>
+                    </div>
+                    <div class="card-footer">FIGMA</div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <section class="container my-5">
-        <div class="bg-white rounded shadow p-4">
-            <div class="row">
-                <!-- A propos -->
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <h3 class="border-bottom pb-2">A propos</h3>
-                    <img src="./assets/img/john-doe-about.jpg" alt="Photo de John Doe" class="img-fluid mb-3" />
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magnam
-                        sunt animi fuga dolore ad tempora in magni eum repellendus. Quae totam
-                        ea earum facere architecto, atque eos in
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magnam
-                        sunt animi fuga dolore ad tempora in magni eum repellendus. Quae totam
-                        ea earum facere architecto, atque eos in
-                    </p>
-                </div>
-
-                <!-- Mes compétences -->
-                <div class="col-md-6">
-                    <h3 class="border-bottom pb-2">Mes compétences</h3>
-
-                    <label>HTML5 90%</label>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 90%;"></div>
-                    </div>
-
-                    <label>CSS 80%</label>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%;"></div>
-                    </div>
-
-                    <label>JAVASCRIPT 70%</label>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 70%;"></div>
-                    </div>
-
-                    <label>PHP 60%</label>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 60%;"></div>
-                    </div>
-
-                    <label>REACT 50%</label>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;"></div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
-    <!-- Instalation Bootsrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
 
     <footer>
         <div class="container">
@@ -199,9 +203,8 @@
                 </div>
             </div>
         </div>
+
     </footer>
-
-
 
 </body>
 

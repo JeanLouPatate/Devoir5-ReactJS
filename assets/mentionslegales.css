@@ -1,0 +1,117 @@
+/* START DU HEADER */
+header {
+    background-color: #00070f;
+    height: 50px;
+}
+
+.navbar * {
+    color: white !important;
+    font-size: 0.9rem;
+    /* taille plus petite */
+}
+
+.nav .nav-link:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navbar {
+    background-color: #00070f;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    /* poids par défaut */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    font-weight: 600;
+    /* titres et balises <strong> */
+}
+
+/* FIN DU HEADER */
+
+/* START DU FOOTER */
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    /* centre verticalement */
+    align-items: center;
+    /* centre horizontalement */
+    background-color: #00070f;
+    color: white;
+}
+
+.foot2 {
+    padding-left: 300px;
+    padding-right: 300px;
+    line-height: 7px;
+}
+
+.foot3 {
+    line-height: 7px;
+    margin-top: 15px;
+}
+
+.h_footer {
+    margin-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    /* enlève le soulignement */
+}
+
+.social-icon {
+    color: rgba(50, 50, 50, 0.6);
+    /* gris foncé un peu transparent */
+    margin-right: 10px;
+    transition: color 0.3s;
+    display: inline-block;
+}
+
+.social-icon:hover {
+    color: rgb(255, 255, 255);
+    /* couleur pleine au survol */
+}
+
+/* FIN DU FOOTER */
+.bar {
+    width: 40%;
+    height: 4px;
+    background-color: #2f83e4;
+    margin: 1rem auto;
+    margin-bottom: 50px;
+}
+main {
+    flex: 1;
+    padding-bottom: 100px; /* espace entre le contenu et le footer */
+}
+.accorsi {
+    max-width: 1000px;
+    margin: 0 auto 10px auto ; /* 100px en bas */
+}
+nav a.active {
+  font-weight: bold;      /* met en gras */
+  text-decoration: underline;  /* souligne le lien actif */
+}
+nav a:hover {
+  text-decoration: underline;
+}
+footer p:hover{
+  font-weight: bold;       /* devient gras au survol */
+    cursor: pointer; /* change le curseur en main */
+}
+.container{
+    margin-bottom: 30px;
+    margin-top: 40px;
+}

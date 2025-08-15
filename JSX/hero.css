@@ -1,0 +1,8 @@
+.btn_home {
+  background-color: red; /* fond rouge */
+  color: white;          /* texte blanc */
+  padding: 5px 12px;     /* un peu d’espace autour du texte */
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
