@@ -1,12 +1,9 @@
+/* START DU HEADER */
 header {
     background-color: #00070f;
     height: 50px;
 }
-.row
-header {
-    background-color: #00070f;
-    height: 50px;
-}
+
 .navbar * {
     color: white !important;
     font-size: 0.9rem;
@@ -39,25 +36,10 @@ strong {
     /* titres et balises <strong> */
 }
 
-.offre1 {
-    /* Titre mon offre de service*/
-    text-align: center;
-    margin-top: 40px;
-}
+/* FIN DU HEADER */
 
-.img_home {
-    width: 100%;
-    height: auto;
-    /* garde les proportions */
-}
+/* START DU FOOTER */
 
-.bar {
-    width: 40%;
-    height: 4px;
-    background-color: #2f83e4;
-    margin: 1rem auto;
-    margin-bottom: 50px;
-}
 
 footer {
     display: flex;
@@ -102,24 +84,19 @@ footer a {
     /* couleur pleine au survol */
 }
 
-.carre {
-    padding-bottom: 50px;
-
+/* FIN DU FOOTER */
+.bar {
+    width: 40%;
+    height: 4px;
+    background-color: #2f83e4;
+    margin: 1rem auto;
+    margin-bottom: 50px;
 }
-.ux,
-.dev,
-.seo {
-    border: 2px solid rgb(179, 179, 179);
-    border-radius: 8px;
-    text-align: center;
+main {
+    flex: 1;
+    padding-bottom: 100px; /* espace entre le contenu et le footer */
 }
-.carre .row {
-  gap: 20px; /* espace entre les blocs */
-}
-
-.carre .row > div {
-  flex: 1 1 0;
-}
-.mb-3{
-    margin-top: 10px;
+.accorsi {
+    max-width: 1000px;
+    margin: 0 auto 10px auto ; /* 100px en bas */
 }

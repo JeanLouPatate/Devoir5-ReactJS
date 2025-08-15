@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John DOE</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="../assets/contact.css">
     <!-- Nunito Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
     <!-- Instalation Bootsrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="./assets/img/anonym.png">
+    <link rel="icon" type="image/png" href="../assets/img/anonym.png">
 </head>
 
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-black-transparent">
             <div class="container-fluid">
-                <span class="navbar-brand"><link rel="stylesheet" href="./index.html">JOHN DOE</span>
+                <span class="navbar-brand">
+                    <link rel="stylesheet" href="./index.html">JOHN DOE
+                </span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -37,10 +38,10 @@
                             <a class="nav-link" href="./pages/portfolio.html">PORTFOLIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/contact.html">CONTACT</a>
+                            <a class="nav-link" href="#">CONTACT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/mentions legales.html">MENTIONS LEGALES</a>
+                            <a class="nav-link" href="#">MENTIONS LEGALES</a>
                         </li>
                     </ul>
                 </div>
@@ -49,69 +50,73 @@
     </header>
 
 
-    <!-- Image et titre de début -->
-    <div class="container text-center py-5 home">
-        <h1 class="display-4">Bonjour, je suis John DOE</h1>
-        <h2 class="lead mb-4">Développeur web full stack</h2>
-        <button class="btn_home">En savoir plus</button>
-    </div>
-    <section class="container my-5">
-        <div class="bg-white rounded shadow p-4">
-            <div class="row">
-                <!-- A propos -->
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <h3 class="border-bottom pb-2">A propos</h3>
-                    <img src="./assets/img/john-doe-about.jpg" alt="Photo de John Doe" class="img-fluid mb-3" />
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magnam
-                        sunt animi fuga dolore ad tempora in magni eum repellendus. Quae totam
-                        ea earum facere architecto, atque eos in
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magnam
-                        sunt animi fuga dolore ad tempora in magni eum repellendus. Quae totam
-                        ea earum facere architecto, atque eos in
-                    </p>
-                </div>
 
-                <!-- Mes compétences -->
-                <div class="col-md-6">
-                    <h3 class="border-bottom pb-2">Mes compétences</h3>
+<section class="offre1 text-center my-5">
+    <h1>Mentions légales</h1>
+    <div class="bar mx-auto"></div>
+</section>
 
-                    <label>HTML5 90%</label>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 90%;"></div>
+
+<div class="container encadrer">
+    <div class="row">
+        <!-- Colonne gauche : Formulaire -->
+        <div class="col-md-6">
+            <section class="un">
+                <h2>Formulaire de contact</h2>
+                <div class="bar mx-auto mb-3"></div>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Nom" required>
                     </div>
-
-                    <label>CSS 80%</label>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%;"></div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Mail" required>
                     </div>
-
-                    <label>JAVASCRIPT 70%</label>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 70%;"></div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Téléphone" required>
                     </div>
-
-                    <label>PHP 60%</label>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 60%;"></div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Sujet" required>
                     </div>
-
-                    <label>REACT 50%</label>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;"></div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="5" placeholder="Votre message" required></textarea>
                     </div>
-                </div>
-            </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </div>
+                </form>
+            </section>
         </div>
-    </section>
 
+        <!-- Colonne droite : Coordonnées + Carte -->
+        <div class="col-md-6">
+            <section class="deux">
+                <h2>Mes coordonnées</h2>
+                <div class="bar mx-auto mb-3"></div>
 
-    <!-- Instalation Bootsrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
+                <ul class="list-unstyled fs-5 mb-4">
+                    <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i> 40 rue Laure Diebold, 67000, France</li>
+                    <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i> 10 20 30 40 50</li>
+                    <li><i class="bi bi-envelope-fill me-2"></i> john.doe@gmail.com</li>
+                </ul>
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps?q=40+rue+Laure+Diebold,+67000,+France&output=embed"
+                        width="100%"
+                        height="300"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
     <footer>
         <div class="container">
@@ -173,8 +178,6 @@
             </div>
         </div>
     </footer>
-
-
 
 </body>
 

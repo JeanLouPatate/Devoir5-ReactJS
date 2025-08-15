@@ -1,12 +1,9 @@
+/* START DU HEADER */
 header {
     background-color: #00070f;
     height: 50px;
 }
-.row
-header {
-    background-color: #00070f;
-    height: 50px;
-}
+
 .navbar * {
     color: white !important;
     font-size: 0.9rem;
@@ -39,25 +36,10 @@ strong {
     /* titres et balises <strong> */
 }
 
-.offre1 {
-    /* Titre mon offre de service*/
-    text-align: center;
-    margin-top: 40px;
-}
+/* FIN DU HEADER */
 
-.img_home {
-    width: 100%;
-    height: auto;
-    /* garde les proportions */
-}
+/* START DU FOOTER */
 
-.bar {
-    width: 40%;
-    height: 4px;
-    background-color: #2f83e4;
-    margin: 1rem auto;
-    margin-bottom: 50px;
-}
 
 footer {
     display: flex;
@@ -102,24 +84,26 @@ footer a {
     /* couleur pleine au survol */
 }
 
-.carre {
-    padding-bottom: 50px;
+/* FIN DU FOOTER */
 
+.bar {
+    width: 40%;
+    height: 4px;
+    background-color: #2f83e4;
+    margin: 1rem auto;
+    margin-bottom: 50px;
 }
-.ux,
-.dev,
-.seo {
-    border: 2px solid rgb(179, 179, 179);
-    border-radius: 8px;
-    text-align: center;
-}
-.carre .row {
-  gap: 20px; /* espace entre les blocs */
-}
-
-.carre .row > div {
-  flex: 1 1 0;
-}
-.mb-3{
-    margin-top: 10px;
-}
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  .un, .contact, h2 {
+     text-align: center;
+    gap: 20px;
+    margin-bottom: 50px;
+     justify-content: center;
+    /* centre verticalement */
+    align-items: center;
+    /* centre horizontalement */
+  }
