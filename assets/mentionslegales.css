@@ -80,7 +80,7 @@ footer a {
 }
 
 .social-icon:hover {
-    color: rgba(50, 50, 50, 1);
+    color: rgb(255, 255, 255);
     /* couleur pleine au survol */
 }
 
@@ -99,4 +99,19 @@ main {
 .accorsi {
     max-width: 1000px;
     margin: 0 auto 10px auto ; /* 100px en bas */
+}
+nav a.active {
+  font-weight: bold;      /* met en gras */
+  text-decoration: underline;  /* souligne le lien actif */
+}
+nav a:hover {
+  text-decoration: underline;
+}
+footer p:hover{
+  font-weight: bold;       /* devient gras au survol */
+    cursor: pointer; /* change le curseur en main */
+}
+.container{
+    margin-bottom: 30px;
+    margin-top: 40px;
 }
